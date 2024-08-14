@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* reseat */
+:root{
+    --roxo: #604CC3;
+    --azul-escuro: #1E3A5F;
+    --azul-claro: #80C4E9;
+    --body-bg: #FFF6E9;
+    --laranja: #FF7F3E;
+    --cinza-claro: #f4f4f4;
+    --Montserrat: "Montserrat", sans-serif;
+    --Lato: "Lato", sans-serif;
+}
+body{
+    background-color: var(--body-bg);
+    font-size: 16px;
+}
+h1, h2, h3, a{
+    font-family: var(--Montserrat);
+}
+p, li, small{
+    font-family: var(--Lato);
+    font-size: 1em;
+    color: #333333;
+}
+/* h1, h2, h3, p, li{
+    max-width: 600px;
+    margin-bottom: 10px;
+} */
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.75em;
+}
+header, section{
+    padding: 70px 20px;
+}
+.btn-cta{
+    text-decoration: none;
+    font-weight: 600;
+    background-color: var(--laranja);
+    padding: 20px 50px;
+    border-radius: 5px;
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+}
+/* global */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* main */
+header.cabecalho{
+    background: url('image/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px black;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+header.cabecalho h1{
+    color: var(--laranja);
+}
+header.cabecalho p{
+    color: var(--cinza-claro);
+    background-color: var(--azul-escuro);
+    padding: 20px;
+    z-index: 1;
+}
+header.cabecalho h1, h2, p{
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+.span-azul{
+    color: var(--azul-claro);
+}
+/* header */
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.intro h2, p{
+    max-width: 500px;
+}
+.intro h2{
+    margin-bottom: 10px;
+}
+.intro img{
+    max-width: 300px;
+}
+/* intro */
+.benefits{
+    color: white;
+    background-color: var(--roxo);
+    padding: 50px;
+    max-width: 1000px;
+}
+.benefits h2{
+    margin-bottom: 10px;
+}
+.benefits li{
+    list-style: none;
+    color: white;
+    margin-bottom: 20px;
+}
+.benefits .fa-check{
+    color: var(--azul-claro);
+    font-size: 1.2em;
+    margin: 5px;
+}
+.benefits strong{
+    font-size: 1.2em;
+}
+/* benefits */
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials h2{
+    margin-bottom: 50px;
+}
+.testimonials-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+.testimonials-card{
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 210px;
+    border: 2px solid var(--roxo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 1px 20px #1e1e1e17;
+}
+.testimonials-card img{
+    width: 50px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    border: 2px solid var(--roxo);
+}
+.testimonials-card p{
+    padding-top: 10px;
+}
+/* .testimonials */
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.cont h2{
+    margin-bottom: 10px;
+}
+.cont-txt{
+    max-width: 400px;
+}
+.cont-txt li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.cont-txt .fa-check{
+    color: var(--roxo);
+    margin: 5px;
+    font-size: 1.2em;
+}
+.cont-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 1000px;
+    background: url("image/tocando-viaolao.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* cont */
+.cta{
+    padding: 50px;
+    border: 2px solid var(--roxo);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+}
+.cta h2{
+    margin-bottom: 10px;
+}
+.cta p{
+    margin-bottom: 50px;
+}
+/* cta */
+.guarantee{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 20px;
+    align-items: center;
+    justify-content: center;
+}
+.guarantee img{
+    max-width: 200px;
+}
+/* quarantee */
+.questions h2, li{
+    margin-bottom: 10px;
+    list-style: none;
+}
+/* questions */
+.conclusion{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-claro);
+    gap: 10px;
+}
+.conclusion p{
+    margin-bottom: 20px;
+}
+/* conclusion */
+footer{
+    margin-top: 50px;
+    background-color: black;
+    padding: 5px;
+    font-size: .7em;
+    text-align: center;
+}
